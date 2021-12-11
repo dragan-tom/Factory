@@ -11,24 +11,17 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+              
         
-      System.out.println("Pocetak");
-      
-      String message="Ovo je poruka";
-      
-      Car fiat=new Car();
-      fiat.model="Fiat Punto";
-      fiat.buildYear=2010;
-      fiat.color="Black";
-      fiat.consumption=6;
-      fiat.maxSpeed=180;
-      fiat.currentFuel=20;
-      fiat.maxFuel=45;
-      
-        System.out.println("Model: " + fiat.model);
-    
-    
-    
-    }
-    
+        Car fiat=new Car("Fiat Punto", 2010, "black", 6, 20, 45);
+        fiat.showData();
+
+        Car ford=new Car("Ford Fiesta", 2015, "yellow", 58, 32, 7);
+        ford.showData();
+        
+        Car lada=new Car("Lada Niva", 1980, "green", 50, 40, 12, 40000);
+        lada.showData();
+        
+      }
+
 }
